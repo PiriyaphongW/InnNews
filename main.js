@@ -1,6 +1,6 @@
 function toggle(open) {
     const toggleClose = document.getElementById('nav-open')
-    toggleClose.classList.remove('active')
+    toggleClose.classList.remove('active-mobile')
 
     const toggleCloseMain = document.getElementById('nav-main')
     toggleCloseMain.classList.add('d-none')
@@ -10,7 +10,7 @@ function toggleHidden(close) {
     const toggleCloseMain = document.getElementById('nav-main')
     toggleCloseMain.classList.remove('d-none')
     const toggleClose = document.getElementById('nav-open')
-    toggleClose.classList.add('active')
+    toggleClose.classList.add('active-mobile')
 }
 
 

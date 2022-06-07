@@ -10,41 +10,34 @@ body {
   margin: 0 !important;
 }
 
- 
-.nav-mobile>ul>li {
+
+.nav-mobile ul li {
   list-style-type: none;
   text-align: center;
   border-top: 1px solid #2d407d;
 }
 
-/* .nav-mobile>ul>li:focus-within{
-        border-top:none;
-} */
-.nav-mobile>ul>li:not(:last-child):focus-within {
+
+.nav-mobile ul li:not(:last-child):focus-within {
   border-top: none;
 }
 
-.nav-mobile>ul>li:last-child {
+.nav-mobile ul li:last-child {
   list-style-type: none;
   text-align: center;
   border-bottom: 1px solid #2d407d;
 }
 
 
-.nav-mobile>ul>li>a {
+.nav-mobile ul li a {
   text-decoration: none;
   color: #2d407d;
   display: inline-block;
   padding: 10px 0;
-  /* padding: 20px; */
-
 
 }
 
-/* .nav-mobile>ul>li>a:hover {
-    opacity: 0.7;
 
-} */
 
 .nav-mobile-main {
   display: flex;
@@ -61,11 +54,9 @@ body {
   cursor: pointer;
 }
 
-.active {
+.active-mobile {
   display: none;
 }
-
-
 
 .nav-mobile nav {
   padding: 10px 0;
@@ -96,7 +87,7 @@ body {
 
 .toggle-sub-menu li {
   list-style-type: none;
-  /* border-bottom-style: 1px solid rgb(194, 28, 28); */
+  
   border-bottom: 1px solid white;
   background-color: rgb(216, 106, 106);
 }
@@ -129,118 +120,103 @@ body {
 }
 
 
-
-
-.collapse-sub-topic>li>ul>li>a {
+.collapse-sub-topic li ul li a {
   text-decoration: none;
   color: white;
 }
 
-/* .collapse-sub-topic> li>ul>li:nth-child(1) {
-    text-decoration: none;
-    background-color: #E33143;  
-    border-top: 1px solid rgba(204, 204, 204, 0.3);
-    padding: 5px 0px; 
- }  */
 
-.collapse-sub-topic>li>ul>li {
+.collapse-sub-topic li ul li {
   text-decoration: none;
   border-top: 1px solid rgba(204, 204, 204, 0.3);
   padding: 5px 0px;
 }
 
-.collapse-sub-topic>li>a:focus {
+.collapse-sub-topic li a:focus {
   width: 100%;
   color: white;
   box-shadow: 0 3px 8px 0 rgb(51 51 51 / 50%);
 }
 
-.collapse-sub-topic>li:first-child>a:focus {
+.collapse-sub-topic li:first-child a:focus {
   background-color: #E33143;
 }
 
-.collapse-sub-topic>li:first-child>ul>li {
+.collapse-sub-topic li:first-child ul li {
   background-color: #E33143;
 }
 
-.collapse-sub-topic>li:nth-child(2)>a:focus {
+.collapse-sub-topic li:nth-child(2) a:focus {
   background-color: #c83f7c;
 }
 
-.collapse-sub-topic>li:nth-child(2)>ul>li {
+.collapse-sub-topic li:nth-child(2) ul li {
   background-color: #c83f7c;
 }
 
-.collapse-sub-topic>li:nth-child(3)>a:focus {
+.collapse-sub-topic li:nth-child(3) a:focus {
   background-color: #bfd730;
 }
 
-.collapse-sub-topic>li:nth-child(3)>ul>li {
+.collapse-sub-topic li:nth-child(3) ul li {
   background-color: #bfd730;
 }
 
-.collapse-sub-topic>li:nth-child(4)>a:focus {
+.collapse-sub-topic li:nth-child(4) a:focus {
   background-color: #ffcb05;
 }
 
-.collapse-sub-topic>li:nth-child(4)>ul>li {
+.collapse-sub-topic li:nth-child(4) ul li {
   background-color: #ffcb05;
 }
 
-.collapse-sub-topic>li:nth-child(5)>a:focus {
+.collapse-sub-topic li:nth-child(5) a:focus {
   background-color: #8071b4;
 }
 
-.collapse-sub-topic>li:nth-child(5)>ul>li {
+.collapse-sub-topic li:nth-child(5) ul li {
   background-color: #8071b4;
 }
 
-.collapse-sub-topic>li:nth-child(6)>a:focus {
+.collapse-sub-topic li:nth-child(6) a:focus {
   background-color: #007dba;
 }
 
-.collapse-sub-topic>li:nth-child(6)>ul>li {
+.collapse-sub-topic li:nth-child(6) ul li {
   background-color: #007dba;
 }
 
-.collapse-sub-topic>li:nth-child(7)>a:focus {
+.collapse-sub-topic li:nth-child(7) a:focus {
   background-color: #eb8923;
 }
 
-.collapse-sub-topic>li:nth-child(7)>ul>li {
+.collapse-sub-topic li:nth-child(7) ul li {
   background-color: #eb8923;
 }
 
-.collapse-sub-topic>li:nth-child(8)>a:focus {
+.collapse-sub-topic li:nth-child(8) a:focus {
   background-color: #44c8f5;
 }
 
-.collapse-sub-topic>li:nth-child(8)>ul>li {
+.collapse-sub-topic li:nth-child(8) ul li {
   background-color: #44c8f5;
 }
 
-.collapse-sub-topic>li:nth-child(9)>a:focus {
+.collapse-sub-topic li:nth-child(9) a:focus {
   background-color: #00abbd;
 }
 
-.collapse-sub-topic>li:nth-child(9)>ul>li {
+.collapse-sub-topic li:nth-child(9) ul li {
   background-color: #00abbd;
 }
 
-.collapse-sub-topic>li:nth-child(10)>a:focus {
+.collapse-sub-topic li:nth-child(10) a:focus {
   background-color: #f15b55;
 }
 
-.collapse-sub-topic>li:nth-child(10)>ul>li {
+.collapse-sub-topic li:nth-child(10) ul li {
   background-color: #f15b55;
 }
-
-
-
-
-
-
-
 
 .collapse-sub-topic li ul li:first-child {
   border-top: none;
@@ -248,7 +224,10 @@ body {
 }
 
 /* SlideFirst */
- /* .owl-items {
+.slide-first{
+  overflow: hidden;
+}
+.owl-items {
   display: block;
   width: 100%;
   padding: 0 !important;
@@ -256,7 +235,7 @@ body {
 }
 
 .slide-first .owl-items img {
-  display: block; 
+  display: block;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -287,16 +266,17 @@ body {
 .slide-first .owl-nav .owl-next {
   top: 25%;
   right: 0;
-} */
+}
 
 
 /* nav-dot*/
 
-/* 
+
 .slide-first .owl-dots .owl-dot span {
   border-radius: 0 !important;
-  
+
 }
+
 .slide-first .owl-dots .active span {
   width: 40px !important;
   border-radius: 2px !important;
@@ -307,45 +287,67 @@ body {
 .slide-first .owl-dots {
   position: relative;
   margin-top: -9% !important;
- 
+
 }
-.slide-first .owl-dots .owl-dot span{
+
+.slide-first .owl-dots .owl-dot span {
   background-color: white !important;
 
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .slide-first .owl-dots {
     position: relative;
     margin-top: -4% !important;
-   
+
   }
+
   .slide-first .owl-nav .owl-prev {
     top: 50%;
     left: 0;
   }
+
   .slide-first .owl-nav .owl-next {
     top: 50%;
     right: 0;
-  } */
-  
-  /* .mobile{
+  }
+}
+
+/* .mobile{
     display: none;
   } */
 
- 
-
-
 /* SlideFirst End*/
 
-/* .owl-carousel-second.item{
-  position: relative;
-}
-.owl-carousel-second .item h3{
-  position: absolute;
-  color: white;
-} */
 
+/* SlideSecond */
+
+.slide-second-img{
+  min-height: 262px;
+  background-position: center;
+  background-size: cover; 
+  display: flex;
+  align-items: center;
+   
+}
+.slide-second-content{
+
+  text-align: center;
+  color: white;
+}
+
+.slide-second-content a{
+  color: white;
+  text-decoration: none;
+}
+
+.slide-second .topic-name{
+  background-color: red;
+  padding:0px 10px;
+}
+
+
+/* SlideSecond End*/
 
 /* .owl-nav .owl-prev i:hover ,.owl-nav .owl-next i:hover{
   background-color: red !important;
@@ -360,4 +362,4 @@ body {
   background-size: 10px 10px !important;
   background-repeat: no-repeat;
   
-} */ 
+} 
