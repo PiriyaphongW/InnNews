@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--GoogleFontKanit-->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <!-- Owlcarousel-CSS-->
+    <!-- <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"> -->
+
+    <link rel="stylesheet" href="/js/owl.carousel.min.css">
+    <link rel="stylesheet" href="/js/owl.theme.default.min.css">
+
+
+    <title>NewsPage</title>
+</head>
+
+<body>
+    <header class="mobile">
+        <nav class="nav-mobile-main" id="nav-main">
+            <div class="home">
+                <a href=""><img src="https://www.innnews.co.th/wp-content/uploads/2020/12/Icon-ionic-md-home.png"
+                        alt=""></a>
+            </div>
+            <div class="nav-logo">
+                <a href=""><img src="https://www.innnews.co.th/wp-content/uploads/2020/12/INN-Logo@2x.png" alt=""></a>
+
+            </div>
+            <div class="nav-toggle" onclick="toggle(this)">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+
+        <div class="nav-mobile active" id="nav-open">
+            <nav>
+                <a href=""><img src="https://www.innnews.co.th/wp-content/uploads/2020/12/inn-white.png" alt=""></a>
+                <div class="nav-close" onclick="toggleHidden(this)">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </nav>
+
+            <ul id="accordionExample" class="collapse-sub-topic">
+                <!-- ข่าว-->
+                <li>
+                    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-content-1">ข่าว</a>
+                    <ul id="collapse-content-1" class="collapse" data-bs-parent="#accordionExample">
+                        <li><a href="https://www.youtube.com/watch?v=eruSM3Tk3BU">พระราชสำนัก</a></li>
+                        <li><a href="">ทั่วไป</a></li>
+                        <li><a href="">การเมือง</a></li>
+                        <li><a href="">เศรษฐกิจ</a></li>
+                        <li><a href="">กีฬา</a></li>
+                        <li><a href="">ต่างประเทศ</a></li>
+                        <li><a href="">Tect</a></li>
+                        <li><a href="">ภูมิภาค</a></li>
+                        <li><a href="">อาชญากรรม</a></li>
+                    </ul>
+                </li>
+
+                <!-- บันเทิง-->
+                <li>
+                    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-content-2">บันเทิง</a>
+                    <ul id="collapse-content-2" class="collapse" data-bs-parent="#accordionExample">
+                        <li><a href="">Hot News</a></li>
+                        <li><a href="">บันเทิงไทย</a></li>
+                        <li><a href="">บันเทิงสากล</a></li>
+                        <li><a href="">เพลง</a></li>
+                        <li><a href="">หนัง</a></li>
+                        <li><a href="">ซีรีส์</a></li>
+                    </ul>
+                </li>
+                <!-- ไลฟ์สไตล์  -->
+                <li>
+                    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-content-3">ไลฟ์สไตล์</a>
+                    <ul id="collapse-content-3" class="collapse" data-bs-parent="#accordionExample">
+                        <li><a href="">ท่องเที่ยว</a></li>
+                        <li><a href="">อาหาร</a></li>
+                        <li><a href="">สุขภาพ</a></li>
+                        <li><a href="">บิวตี้</a></li>
+                        <li><a href="">ช้อปปิ้ง</a></li>
+                        <li><a href="">โปรโมชั่น</a></li>
+                        <li><a href="">Local Vlog</a></li>
+                    </ul>
+                </li>
+                <!-- การเงิน -->
+                <li>
+                    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-content-4">การเงิน</a>
+                    <ul id="collapse-content-4" class="collapse" data-bs-parent="#accordionExample">
+                        <li><a href="">การเงิน</a></li>
+                        <li><a href="">หุ้น</a></li>
+                        <li><a href="">ทองคำ</a></li>
+                        <li><a href="">น้ำมัน</a></li>
+                    </ul>
+
+
+                </li>
+                <!-- ดวง -->
+                <li>
+                    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-content-5">ดวง</a>
+                    <ul id="collapse-content-5" class="collapse" data-bs-parent="#accordionExample">
+                        <li><a href="">ดวง</a></li>
+                        <li><a href="">ปาฏิหาริย์</a></li>
+                        <li><a href="">ฮวงจุ้ย</a></li>
+                    </ul>
+
+
+                </li>
+                <!-- ลอตเตอรี่ -->
+                <li>
+                    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-content-6">ลอตเตอรี่</a>
+                    <ul id="collapse-content-6" class="collapse" data-bs-parent="#accordionExample">
+                        <li><a href="">ข่าว</a></li>
+                        <li><a href="">ข่าวแนะนำ</a></li>
+
+                    </ul>
+
+
+                </li>
+                <!-- E-Sport -->
+                <li>
+                    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-content-7">E-Sport</a>
+                    <ul id="collapse-content-7" class="collapse" data-bs-parent="#accordionExample">
+                        <li><a href="">ข่าวสาร</a></li>
+                        <li><a href="">คอนเทนต์</a></li>
+                        <li><a href="">รีวิว</a></li>
+                    </ul>
+                </li>
+                <!-- Podcast -->
+                <li>
+                    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-content-8">Podcast</a>
+                    <ul id="collapse-content-8" class="collapse" data-bs-parent="#accordionExample">
+                        <li><a href="">Trending</a></li>
+                        <li><a href="">ทั่วไป</a></li>
+                    </ul>
+                </li>
+                <!-- Video -->
+                <li>
+                    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-content-9">Video</a>
+                    <ul id="collapse-content-9" class="collapse" data-bs-parent="#accordionExample">
+                        <li><a href="">Hot Clips</a></li>
+                        <li><a href="">คลิปเด่น Social</a></li>
+                        <li><a href="">คลิปข่าวทั่วไป</a></li>
+                        <li><a href="">คลิปข่าวต้นชั่วโมง</a></li>
+                        <li><a href="">News Round Up</a></li>
+                        <li><a href="">สัมภาษณ์พิเศษ</a></li>
+                    </ul>
+                </li>
+                <!-- ร่วมด้วยช่วยกัน -->
+                <li>
+                    <a href="" data-bs-toggle="collapse" data-bs-target="#collapse-content-10">ร่วมด้วยช่วยกัน</a>
+                    <ul id="collapse-content-10" class="collapse" data-bs-parent="#accordionExample">
+                        <li><a href="">เรื่องร่วมด้วยช่วยกัน</a></li>
+                        <li><a href="">กิจกรรมเพื่อสังคม</a></li>
+                        <li><a href="">คลิปร่วมด้วยช่วยกัน</a></li>
+                        <li><a href="">เกี่วกับเรา</a></li>
+                    </ul>
+                </li>
+                <!-- SearchInput -->
+                <li class="search-input-li ">
+                    <div class="search-input ">
+                        <input type="text" class="form-control" placeholder="ค้นหา" data-bs-parent="#accordionExample">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--SlideFirst-->
+    <section class="slide-first">
+        <div class="owl-carousel owl-carousel-first owl-theme">
+            <div class="item" data-merge="1">
+                <img src="/assets/first-slide-1.png" alt="">
+            </div>
+            <div class="item" data-merge="1">
+                <img src="/assets/first-slide-2.png" alt="">
+            </div>
+            <div class="item" data-merge="1">
+                <img src="/assets/first-slide-3.png" alt="">
+            </div>
+            <div class="item" data-merge="1">
+                <img src="/assets/first-slide-4.png" alt="">
+            </div>
+            <div class="item" data-merge="1">
+                <img src="/assets/first-slide-5.png" alt="">
+            </div>
+            <div class="item" data-merge="1">
+                <img src="/assets/first-slide-6.png" alt="">
+            </div>
+            <div class="item" data-merge="1">
+                <img src="/assets/first-slide-7.png" alt="">
+            </div>
+            <div class="item" data-merge="1">
+                <img src="/assets/first-slide-8.png" alt="">
+            </div>
+            <div class="item" data-merge="1">
+                <img src="/assets/first-slide-9.png" alt="">
+            </div>
+            <div class="item" data-merge="1">
+                <img src="/assets/first-slide-10.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <!--SlideFirst End-->
+
+    <!--SlideSecond-->
+    <section class="slide-second">
+        <div class="owl-carousel owl-carousel-second owl-theme">
+            <div class="item">
+                <h3>Content1</h3>
+                <a href=""> <img src="https://www.innnews.co.th/wp-content/uploads/2022/05/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%AF-5.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <h3>Content2</h3>
+                <a href=""> <img src="https://www.innnews.co.th/wp-content/uploads/2022/05/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%AF-5.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <h3>Content3</h3>
+                <a href=""> <img src="https://www.innnews.co.th/wp-content/uploads/2022/05/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%AF-5.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <h3>Content4</h3>
+                <a href=""> <img src="https://www.innnews.co.th/wp-content/uploads/2022/05/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%AF-5.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <h3>Content5</h3>
+                <a href=""> <img src="https://www.innnews.co.th/wp-content/uploads/2022/05/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%AF-5.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <h3>Content6</h3>
+                <a href=""> <img src="https://www.innnews.co.th/wp-content/uploads/2022/05/%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%AF-5.jpg" alt=""></a>
+            </div>
+           
+        </div>
+    </section>
+    <!--SlideSecond End-->
+</body>
+
+<style>
+
+</style>
+
+</html>
+
+
+<!-- <script src="/js/owl.carousel.min.js"></script> -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/owl.carousel.js"></script>
+
+<script src="/main.js"></script>

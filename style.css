@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+ 
+.nav-mobile>ul>li {
+  list-style-type: none;
+  text-align: center;
+  border-top: 1px solid #2d407d;
+}
+
+/* .nav-mobile>ul>li:focus-within{
+        border-top:none;
+} */
+.nav-mobile>ul>li:not(:last-child):focus-within {
+  border-top: none;
+}
+
+.nav-mobile>ul>li:last-child {
+  list-style-type: none;
+  text-align: center;
+  border-bottom: 1px solid #2d407d;
+}
+
+
+.nav-mobile>ul>li>a {
+  text-decoration: none;
+  color: #2d407d;
+  display: inline-block;
+  padding: 10px 0;
+  /* padding: 20px; */
+
+
+}
+
+/* .nav-mobile>ul>li>a:hover {
+    opacity: 0.7;
+
+} */
+
+.nav-mobile-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+
+}
+
+.nav-logo img {
+  width: 3.6rem;
+}
+
+.nav-toggle {
+  cursor: pointer;
+}
+
+.active {
+  display: none;
+}
+
+
+
+.nav-mobile nav {
+  padding: 10px 0;
+  background-color: #2d407d;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-mobile nav i {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  right: 10px;
+}
+
+.nav-mobile ul {
+  padding: 0;
+}
+
+.nav-mobile nav img {
+  width: 5.8rem;
+}
+
+.nav-close i {
+  cursor: pointer;
+}
+
+.toggle-sub-menu li {
+  list-style-type: none;
+  /* border-bottom-style: 1px solid rgb(194, 28, 28); */
+  border-bottom: 1px solid white;
+  background-color: rgb(216, 106, 106);
+}
+
+.toggle-sub-menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.search-input {
+  margin-right: auto;
+  margin-left: auto;
+  width: 85%;
+
+}
+
+.form-control {
+  background-color: #eee;
+  color: rgb(88, 85, 85);
+  text-align: center;
+  border-radius: 7px;
+  border: none;
+
+
+}
+
+.search-input-li {
+  padding: 7px 0px;
+
+}
+
+
+
+
+.collapse-sub-topic>li>ul>li>a {
+  text-decoration: none;
+  color: white;
+}
+
+/* .collapse-sub-topic> li>ul>li:nth-child(1) {
+    text-decoration: none;
+    background-color: #E33143;  
+    border-top: 1px solid rgba(204, 204, 204, 0.3);
+    padding: 5px 0px; 
+ }  */
+
+.collapse-sub-topic>li>ul>li {
+  text-decoration: none;
+  border-top: 1px solid rgba(204, 204, 204, 0.3);
+  padding: 5px 0px;
+}
+
+.collapse-sub-topic>li>a:focus {
+  width: 100%;
+  color: white;
+  box-shadow: 0 3px 8px 0 rgb(51 51 51 / 50%);
+}
+
+.collapse-sub-topic>li:first-child>a:focus {
+  background-color: #E33143;
+}
+
+.collapse-sub-topic>li:first-child>ul>li {
+  background-color: #E33143;
+}
+
+.collapse-sub-topic>li:nth-child(2)>a:focus {
+  background-color: #c83f7c;
+}
+
+.collapse-sub-topic>li:nth-child(2)>ul>li {
+  background-color: #c83f7c;
+}
+
+.collapse-sub-topic>li:nth-child(3)>a:focus {
+  background-color: #bfd730;
+}
+
+.collapse-sub-topic>li:nth-child(3)>ul>li {
+  background-color: #bfd730;
+}
+
+.collapse-sub-topic>li:nth-child(4)>a:focus {
+  background-color: #ffcb05;
+}
+
+.collapse-sub-topic>li:nth-child(4)>ul>li {
+  background-color: #ffcb05;
+}
+
+.collapse-sub-topic>li:nth-child(5)>a:focus {
+  background-color: #8071b4;
+}
+
+.collapse-sub-topic>li:nth-child(5)>ul>li {
+  background-color: #8071b4;
+}
+
+.collapse-sub-topic>li:nth-child(6)>a:focus {
+  background-color: #007dba;
+}
+
+.collapse-sub-topic>li:nth-child(6)>ul>li {
+  background-color: #007dba;
+}
+
+.collapse-sub-topic>li:nth-child(7)>a:focus {
+  background-color: #eb8923;
+}
+
+.collapse-sub-topic>li:nth-child(7)>ul>li {
+  background-color: #eb8923;
+}
+
+.collapse-sub-topic>li:nth-child(8)>a:focus {
+  background-color: #44c8f5;
+}
+
+.collapse-sub-topic>li:nth-child(8)>ul>li {
+  background-color: #44c8f5;
+}
+
+.collapse-sub-topic>li:nth-child(9)>a:focus {
+  background-color: #00abbd;
+}
+
+.collapse-sub-topic>li:nth-child(9)>ul>li {
+  background-color: #00abbd;
+}
+
+.collapse-sub-topic>li:nth-child(10)>a:focus {
+  background-color: #f15b55;
+}
+
+.collapse-sub-topic>li:nth-child(10)>ul>li {
+  background-color: #f15b55;
+}
+
+
+
+
+
+
+
+
+.collapse-sub-topic li ul li:first-child {
+  border-top: none;
+
+}
+
+/* SlideFirst */
+ /* .owl-items {
+  display: block;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.slide-first .owl-items img {
+  display: block; 
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.slide-first .owl-nav .owl-prev,
+.slide-first .owl-nav .owl-next {
+  position: absolute;
+  background-color: #c1bbb3 !important;
+  opacity: 0.8;
+  width: 36px !important;
+  height: 60px !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+
+}
+
+.slide-first .owl-nav .owl-prev:hover,
+.slide-first .owl-nav .owl-next:hover {
+  opacity: 1 !important;
+
+}
+
+.slide-first .owl-nav .owl-prev {
+  top: 25%;
+  left: 0;
+}
+
+.slide-first .owl-nav .owl-next {
+  top: 25%;
+  right: 0;
+} */
+
+
+/* nav-dot*/
+
+/* 
+.slide-first .owl-dots .owl-dot span {
+  border-radius: 0 !important;
+  
+}
+.slide-first .owl-dots .active span {
+  width: 40px !important;
+  border-radius: 2px !important;
+  outline: 2px solid black !important;
+}
+
+
+.slide-first .owl-dots {
+  position: relative;
+  margin-top: -9% !important;
+ 
+}
+.slide-first .owl-dots .owl-dot span{
+  background-color: white !important;
+
+}
+
+@media (min-width: 576px) { 
+  .slide-first .owl-dots {
+    position: relative;
+    margin-top: -4% !important;
+   
+  }
+  .slide-first .owl-nav .owl-prev {
+    top: 50%;
+    left: 0;
+  }
+  .slide-first .owl-nav .owl-next {
+    top: 50%;
+    right: 0;
+  } */
+  
+  /* .mobile{
+    display: none;
+  } */
+
+ 
+
+
+/* SlideFirst End*/
+
+/* .owl-carousel-second.item{
+  position: relative;
+}
+.owl-carousel-second .item h3{
+  position: absolute;
+  color: white;
+} */
+
+
+/* .owl-nav .owl-prev i:hover ,.owl-nav .owl-next i:hover{
+  background-color: red !important;
+  width: 50px !important;
+  transform: scale(1.8);
+} */
+
+/* .owl-nav .owl-prev span ,.owl-nav .owl-next span{
+  opacity: 0.8;
+  background-color: red!important; 
+  font-size: 3rem;
+  background-size: 10px 10px !important;
+  background-repeat: no-repeat;
+  
+} */ 
